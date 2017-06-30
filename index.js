@@ -20,7 +20,7 @@ console.log(
     figlet.textSync('ngwp', { horizontalLayout: 'full' })
   )
 );
-console.log('Angular2+'); 
+console.log(chalk.cyan('Angular2+')); 
 console.log('Typescript, Sass, Karma, Jasmine, and Webpack 2\n');
 
 // Check to make sure we're not already a git repository
