@@ -23,13 +23,4 @@ console.log(
 console.log(chalk.cyan('Angular2+')); 
 console.log('Typescript, Sass, Karma, Jasmine, and Webpack 2\n');
 
-// Check to make sure we're not already a git repository
-// if (files.directoryExists('.git')) {
-//   console.log(chalk.red('Already a git repository!'));
-//   process.exit();
-// }
-
-// console.log(process.cwd())
-// console.log(files.directoryExists('/Users/dancarr/Desktop/cli/blueprints'))
-
 files.install();
