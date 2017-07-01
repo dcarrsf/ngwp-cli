@@ -23,4 +23,25 @@ console.log(
 console.log(chalk.cyan('Angular2+')); 
 console.log('Typescript, Sass, Karma, Jasmine, and Webpack 2\n');
 
-files.new('my-app', false);
+inquirer.prompt([{
+  type: 'input',
+  name: 'name',
+  message: 'Enter project name: ',
+  default: 'my-app'
+}, {
+  type: 'checkbox',
+  name: 'routes',
+  message: 'Do you need routing? ',
+  choices: [
+    {name: 'true', value: true, checked: true},
+    {name: 'false', value: false}
+  ]
+}])
+.then(function (answers) {
+    console.log(answers);
+})
+.catch(function (error) {
+    console.log(error);
+});
+
+// files.new('my-app', false);
