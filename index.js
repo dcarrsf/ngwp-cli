@@ -23,4 +23,4 @@ console.log(
 console.log(chalk.cyan('Angular2+')); 
 console.log('Typescript, Sass, Karma, Jasmine, and Webpack 2\n');
 
-files.new('my-app', false);
+files.new('my-app-routes', true);
