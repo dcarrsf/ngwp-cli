@@ -13,6 +13,7 @@ var Preferences = require('preferences');
 var touch       = require('touch');
 var fs          = require('fs');
 var files       = require('./lib/files');
+var program     = require('commander');
 
 clear();
 console.log(
@@ -23,25 +24,27 @@ console.log(
 console.log(chalk.cyan('Angular2+')); 
 console.log('Typescript, Sass, Karma, Jasmine, and Webpack 2\n');
 
-inquirer.prompt([{
-  type: 'input',
-  name: 'name',
-  message: 'Enter project name: ',
-  default: 'my-app'
-}, {
-  type: 'checkbox',
-  name: 'routes',
-  message: 'Do you need routing? ',
-  choices: [
-    {name: 'true', value: true, checked: true},
-    {name: 'false', value: false}
-  ]
-}])
-.then(function (answers) {
-    console.log(answers);
-})
-.catch(function (error) {
-    console.log(error);
+program
+  .version('0.1.0')
+  .option("-r, --routing [routes]", "Do you need page routing?")
+
+program
+  .command('new [name]')
+  .description('Install Angular2+ started files with Webpack bundling.')
+  .action(function(name, options){
+    files.new(name, options.routes == true ? true : false);
+  })
+.on('--help', function() {
+  console.log('  Examples:');
+  console.log();
+  console.log('    $ ngwp new <name> --routing true');
+  console.log('    $ ngwp new <name> -r true');
+  console.log();
+  console.log('    $ ngwp generate <type> --routing true');
+  console.log('    $ ngwp generate <type> -r true');
+  console.log();
 });
 
-// files.new('my-app', false);
+
+
+program.parse(process.argv);
