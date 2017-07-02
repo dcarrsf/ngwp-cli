@@ -1,19 +1,11 @@
 #!/usr/bin/env node
 'use strict';
+const program     = require('commander');
 const chalk       = require('chalk');
 const clear       = require('clear');
-// const CLI         = require('clui');
 const figlet      = require('figlet');
-const inquirer    = require('inquirer');
-const Preferences = require('preferences');
-// const Spinner     = CLI.Spinner;
-// const GitHubApi   = require('github');
-// const _           = require('lodash');
-// const git         = require('simple-git')();
-const touch       = require('touch');
 const fs          = require('fs');
 const files       = require('./lib/files');
-const program     = require('commander');
 
 const printBanner = () => {
   clear();
@@ -54,7 +46,7 @@ program.on('--help', function() {
   console.log('pipe [name]           Install a new pipe into ./shared/pipes');
   console.log('model [name]          Install a new pipe into ./shared/models');
   // todo: build project from json config
-  // console.log('init [json]        Install a new pipe into ./shared/models.');
+  // console.log('init [json]        Install project based on json config.');
   // Options
   console.log();
   console.log(chalk.cyan('Options:'));
