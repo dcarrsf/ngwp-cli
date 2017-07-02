@@ -29,6 +29,48 @@ program
     files.new(name, options.routes === 'true' ? true : false);
   });
 
+program
+  .command('component [name]')
+  .action(function(name, options){
+    printBanner();
+    files.component(name, options);
+  });
+
+program
+  .command('directive [name]')
+  .action(function(name, options){
+    printBanner();
+    files.directive(name, options);
+  });
+
+program
+  .command('service [name]')
+  .action(function(name, options){
+    printBanner();
+    files.service(name, options);
+  });
+
+program
+  .command('pipe [name]')
+  .action(function(name, options){
+    printBanner();
+    files.pipe(name, options);
+  });
+
+program
+  .command('model [name]')
+  .action(function(name, options){
+    printBanner();
+    files.model(name, options);
+  });
+
+program
+  .command('route [name]')
+  .action(function(name, options){
+    printBanner();
+    files.route(name, options);
+  });
+
 program.on('--help', function() {
   // Banner
   printBanner();
