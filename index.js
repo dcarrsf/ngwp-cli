@@ -7,7 +7,7 @@ const figlet      = require('figlet');
 const ngwp        = require('./lib/ngwp');
 
 const printBanner = () => {
-  clear();
+  // clear();
   console.log(
     chalk.yellow(
       figlet.textSync('ngwp', { horizontalLayout: 'full' })
