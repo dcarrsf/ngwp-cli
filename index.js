@@ -4,8 +4,7 @@ const program     = require('commander');
 const chalk       = require('chalk');
 const clear       = require('clear');
 const figlet      = require('figlet');
-const fs          = require('fs');
-const files       = require('./lib/utils/files');
+const ngwp        = require('./lib/ngwp');
 
 const printBanner = () => {
   clear();
@@ -22,53 +21,53 @@ program
   .version('0.1.0')
 
 program
-  .command('new [name]')
+  .command('init [name]')
   .option("-r, --routes [routes]", "Do you need page routing?")
   .action(function(name, options){
     printBanner();
-    files.new(name, options.routes === 'true' ? true : false);
+    ngwp.init(name, options);
   });
 
 program
   .command('component [name]')
   .action(function(name, options){
     printBanner();
-    files.component(name, options);
+    ngwp.component(name, options);
   });
 
 program
   .command('directive [name]')
   .action(function(name, options){
     printBanner();
-    files.directive(name, options);
+    ngwp.directive(name, options);
   });
 
 program
   .command('service [name]')
   .action(function(name, options){
     printBanner();
-    files.service(name, options);
+    ngwp.service(name, options);
   });
 
 program
   .command('pipe [name]')
   .action(function(name, options){
     printBanner();
-    files.pipe(name, options);
+    ngwp.pipe(name, options);
   });
 
 program
   .command('model [name]')
   .action(function(name, options){
     printBanner();
-    files.model(name, options);
+    ngwp.model(name, options);
   });
 
 program
   .command('route [name]')
   .action(function(name, options){
     printBanner();
-    files.route(name, options);
+    ngwp.route(name, options);
   });
 
 program.on('--help', function() {
