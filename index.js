@@ -5,7 +5,7 @@ const chalk       = require('chalk');
 const clear       = require('clear');
 const figlet      = require('figlet');
 const fs          = require('fs');
-const files       = require('./lib/files');
+const files       = require('./lib/utils/files');
 
 const printBanner = () => {
   clear();
@@ -75,7 +75,7 @@ program.on('--help', function() {
   // Banner
   printBanner();
   // Usage
-  console.log(chalk.yellow('Usage: ngwp <name> --r true'));
+  console.log(chalk.yellow('Usage: ngwp my-app --r true'));
   // Commands
   console.log();
   console.log(chalk.cyan('Commands:'));
