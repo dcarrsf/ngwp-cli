@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { <%= classifiedModuleName %>Service } from './<%= dasherizedModuleName %>.service';
+import { <% serviceclassname %>Service } from './<% servicename %>.service';
 
-describe('<%= classifiedModuleName %>Service', () => {
+describe('<% serviceclassname %>', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [<%= classifiedModuleName %>Service]
+      providers: [<% serviceclassname %>]
     });
   });
 
-  it('should be created', inject([<%= classifiedModuleName %>Service], (service: <%= classifiedModuleName %>Service) => {
+  it('should be created', inject([<% serviceclassname %>], (service: <% serviceclassname %>) => {
     expect(service).toBeTruthy();
   }));
 });
