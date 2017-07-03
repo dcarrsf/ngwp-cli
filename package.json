@@ -2,10 +2,27 @@
   "name": "ngwp-cli",
   "version": "1.0.0",
   "author": "Dan Carr",
-  "license": "MIT",
+  "license": "ISC",
+  "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcarrsf/ngwp-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dcarrsf/ngwp-cli/issues"
+  },
+  "homepage": "https://github.com/dcarrsf/ngwp-cli#readme",
+  "keywords": [
+    "Angular2",
+    "Typescript",
+    "Sass",
+    "Karma",
+    "Jasmine",
+    "Webpack2"
+  ],
   "dependencies": {
     "chalk": "^2.0.1",
     "clear": "0.0.1",
