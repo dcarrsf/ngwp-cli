@@ -1,8 +1,8 @@
-import { <% classname %> } from './<% name %>.model';
+import { <% classname %>Model } from './<% name %>.model';
 
-describe('<% classname %>', () => {
+describe('<% classname %>Model', () => {
   it('should create an instance', () => {
-    const model = new <% classname %>();
+    const model = new <% classname %>Model();
     expect(model).toBeTruthy();
   });
 });
