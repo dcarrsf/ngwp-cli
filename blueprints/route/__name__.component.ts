@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: '<% componentselector %>',
-  templateUrl: './<% componentname %>.component.html',
-  styleUrls: ['./<% componentname %>.component.scss']
+  selector: '<% routeselector %>',
+  templateUrl: './<% routename %>.component.html',
+  styleUrls: ['./<% routename %>.component.scss']
 })
 export class <% componentclassname %> implements OnInit {
 

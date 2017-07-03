@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { <% componentclassname %> } from './<% componentname %>.component';
+import { <% routeclassname %> } from './<% routename %>.component';
 
-describe('<% componentclassname %>Component', () => {
+describe('<% routeclassname %>Component', () => {
   let component: <% componentclassname %>;
-  let fixture: ComponentFixture<<% componentclassname %>>;
+  let fixture: ComponentFixture<<% routeclassname %>>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ <% componentclassname %> ]
+      declarations: [ <% routeclassname %> ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(<% componentclassname %>);
+    fixture = TestBed.createComponent(<% routeclassname %>);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
