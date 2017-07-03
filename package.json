@@ -1,6 +1,7 @@
 {
   "name": "ngwp-cli",
   "version": "1.0.0",
+  "author": "Dan Carr",
   "license": "MIT",
   "scripts": {
     "test": ""
@@ -10,10 +11,7 @@
     "clear": "0.0.1",
     "commander": "^2.10.0",
     "figlet": "^1.2.0",
-    "inquirer": "^3.1.1",
-    "preferences": "^0.2.1",
     "replacestream": "^4.0.2",
-    "rimraf": "^2.6.1",
-    "touch": "^3.0.0"
+    "rimraf": "^2.6.1"
   }
 }
