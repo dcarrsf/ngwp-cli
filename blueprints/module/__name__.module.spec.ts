@@ -1,13 +1,13 @@
 import { <%= moduleclassname %>Module } from './<%= dasherizedModuleName %>.module';
 
 describe('<% moduleclassname %>Module', () => {
-  let <% moduleclassname %>Module: <% moduleclassname %>Module;
+  let <% classname %>Module: <% classname %>Module;
 
   beforeEach(() => {
-    <% moduleclassname %>Module = new <% moduleclassname %>Module();
+    <% classname %>Module = new <% classname %>Module();
   });
 
   it('should create an instance', () => {
-    expect(<% moduleclassname %>Module).toBeTruthy();
+    expect(<% classname %>Module).toBeTruthy();
   });
 });

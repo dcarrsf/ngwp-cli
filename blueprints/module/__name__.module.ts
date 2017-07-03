@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { <% moduleclassname %>RoutingModule } from './<% modulename %>-routing.module';
+import { <% classname %>RoutingModule } from './<% name %>-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    <% moduleclassname %>RoutingModule
+    <% classname %>RoutingModule
   ],
   declarations: []
 })
-export class <% moduleclassname %>Module { }
+export class <% classname %>Module { }
