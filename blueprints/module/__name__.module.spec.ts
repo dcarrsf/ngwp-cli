@@ -1,13 +1,13 @@
-import { <%= classifiedModuleName %>Module } from './<%= dasherizedModuleName %>.module';
+import { <%= moduleclassname %>Module } from './<%= dasherizedModuleName %>.module';
 
-describe('<%= classifiedModuleName %>Module', () => {
-  let <%= camelizedModuleName %>Module: <%= classifiedModuleName %>Module;
+describe('<% moduleclassname %>Module', () => {
+  let <% moduleclassname %>Module: <% moduleclassname %>Module;
 
   beforeEach(() => {
-    <%= camelizedModuleName %>Module = new <%= classifiedModuleName %>Module();
+    <% moduleclassname %>Module = new <% moduleclassname %>Module();
   });
 
   it('should create an instance', () => {
-    expect(<%= camelizedModuleName %>Module).toBeTruthy();
+    expect(<% moduleclassname %>Module).toBeTruthy();
   });
 });
