@@ -1,9 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: '<%= camelizedModuleName %>'
+  name: '<% pipeclassname %>'
 })
-export class <%= classifiedModuleName %>Pipe implements PipeTransform {
+export class <% pipeclassname %>Pipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
     return null;

@@ -1,8 +1,8 @@
-import { <%= classifiedModuleName %>Pipe } from './<%= dasherizedModuleName %>.pipe';
+import { <%= pipeclassname %>Pipe } from './<%= pipename %>.pipe';
 
-describe('<%= classifiedModuleName %>Pipe', () => {
+describe('<%= pipeclassname %>', () => {
   it('create an instance', () => {
-    const pipe = new <%= classifiedModuleName %>Pipe();
+    const pipe = new <% pipeclassname %>();
     expect(pipe).toBeTruthy();
   });
 });
