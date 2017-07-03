@@ -1,8 +1,8 @@
 import { <% classname %>Directive } from './<% name %>.directive';
 
-describe('<% classname %>', () => {
+describe('<% classname %>'Directive, () => {
   it('should create an instance', () => {
-    const directive = new <% classname %>();
+    const directive = new <% classname %>Directive();
     expect(directive).toBeTruthy();
   });
 });
