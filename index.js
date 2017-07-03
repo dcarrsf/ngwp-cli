@@ -70,6 +70,13 @@ program
     ngwp.route(name, options);
   });
 
+program
+  .command('module [name]')
+  .action(function(name, options){
+    printBanner();
+    ngwp.module(name, options);
+  });
+
 program.on('--help', function() {
   // Banner
   printBanner();
