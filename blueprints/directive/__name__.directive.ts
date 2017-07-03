@@ -1,7 +1,7 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[<% selector %>]'
+  selector: '[<% directivename %>]'
 })
 export class <% directiveclassname %> {
 
