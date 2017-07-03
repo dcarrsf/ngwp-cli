@@ -13,14 +13,14 @@ export class <% modelclassname %> {
   // --------------------------
   // METHODS:
 
-  manipulateData() {
+  changeData() {
     // do stuff...
   }
   // --------------------------
   // GETTER/SETTERS:
 
   set name(value) {
-    privateData.get(this).name = value;
+    privateData.set(this, {name: value});
   }
 
   get name() {
