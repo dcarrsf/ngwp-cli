@@ -1,8 +1,8 @@
-import { <% modelclassname %> } from './<% modelname %>.directive';
+import { <% classname %> } from './<% name %>.model';
 
-describe('<% modelclassname %>', () => {
+describe('<% classname %>', () => {
   it('should create an instance', () => {
-    const model = new <% modelclassname %>();
+    const model = new <% classname %>();
     expect(model).toBeTruthy();
   });
 });
