@@ -1,6 +1,8 @@
 # ngwp-cli
 Angular2+ CLI and starter files with Typescript, Sass, Karma, Jasmine, and Webpack 2 bundling.
 
+![Screenshot](/img/ngwp-init.jpg)
+
 ## Overview
 The ngwp CLI is designed to make Angular development with Webpack easy and fast. Use the CLI to generate a new project, then use generator commands to quickly add components, directives, pipes, models, services, and routes.
 
