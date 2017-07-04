@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: '<% routeselector %>',
-  templateUrl: './<% routename %>.component.html',
-  styleUrls: ['./<% routename %>.component.scss']
+  selector: '<% selector %>',
+  templateUrl: './<% name %>.component.html',
+  styleUrls: ['./<% name %>.component.scss']
 })
-export class <% componentclassname %> implements OnInit {
+export class <% classname %> implements OnInit {
 
   constructor() { }
 
