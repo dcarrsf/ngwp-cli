@@ -14,7 +14,7 @@ const printBanner = () => {
     )
   );
   console.log(chalk.cyan('Angular2+')); 
-  console.log('Typescript, Sass, Karma, Jasmine, and Webpack 2\n');
+  console.log('Typescript, Sass, Karma, Jasmine, and Webpack\n');
 };
 
 program
