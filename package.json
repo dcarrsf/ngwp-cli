@@ -23,7 +23,6 @@
   "dependencies": {
     "chalk": "^2.0.1",
     "clear": "0.0.1",
-    "color-convert": "^1.9.0",
     "commander": "^2.10.0",
     "figlet": "^1.2.0",
     "inquirer": "^3.1.1",
