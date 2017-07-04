@@ -38,10 +38,14 @@ $ ngwp init
 ? Project description: A really cool media player built with Angular.
 ? Do you need page routing? Y/n Yes
 ```
-Be sure to cd into the new directory before running further commands. Run the npm install command to install dependencies.
+Be sure to cd into the new directory before running further commands. 
 
 ```
 $ cd movie-player
+```
+Run the npm install command to install dependencies.
+
+```
 $ npm install
 ```
 
