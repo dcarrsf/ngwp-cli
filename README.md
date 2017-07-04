@@ -5,18 +5,19 @@ Angular2+ CLI and starter files with Typescript, Sass, Karma, Jasmine, and Webpa
 The ngwp CLI is designed to make Angular development with Webpack easy and fast. Use the CLI to generate a new project, then use generator commands to quickly add components, directives, pipes, models, services, and routes.
 
 ## Installation
-First, download the NPM module by installing it globally. The global install will enable you to access the ngwp command without installing it locally.
+First, clone the repo to your local drive. Then, cd into the ngwp-cli directory and install the CLI globally. This approach will enable you to modify the template files as needed, while using the CLI across projects.
 
 ```
-$ npm install ngwp-cli -g
+$ cd Desktop
+$ git clone https://github.com/dcarrsf/ngwp-cli.git
+$ cd ngwp-cli
+$ npm install -g
 ```
 Check the version to confirm the installation.
-
 ```
 $ ngwp -V
 ```
 Use the --help command to view your options.
-
 ```
 $ ngwp --help
 ```
