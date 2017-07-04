@@ -27,7 +27,7 @@ $ ngwp --help
 The CLI includes commands that you'll use to generate parts of the project. You'll start with the *init* command which you'll use to generate the project structure.
 
 ### init
-The *init* command responds with a series of questions, which are used to generate the config for the project.
+The *init* command responds with a series of questions, which are used to generate the config for the project. Notice that the last option enables you to add page routing and related starter files to the boilerplate.
 ```
 $ ngwp init
 
@@ -36,8 +36,6 @@ $ ngwp init
 ? Project description: A really cool media player built with Angular.
 ? Do you need page routing? Y/n Yes
 ```
-Notice that the last option enables you to add page routing and related starter files to the boilerplate.
-
 Be sure to cd into the new directory before running further commands.
 
 ```
@@ -48,7 +46,7 @@ $ cd movie-player
 The *route* command adds a component to the *app* folder. Use this option to create a new page route. 
 
 ```
-$ ngwp route content
+$ ngwp route contact
 ```
 After generating the component, be sure to add it to the *app.routing.ts* file.
 
@@ -64,7 +62,7 @@ After generating the component, be sure to add it to the *app.module.ts* file, o
 The *directive* command adds a directive to the *app/shared/directives* folder. Use this option to create custom directives to manipulat ethe DOM. 
 
 ```
-$ ngwp directive ngForEven
+$ ngwp directive iterate
 ```
 
 ### pipe [name]
