@@ -38,11 +38,24 @@ $ ngwp init
 ```
 Notice that the last option enables you to add page routing and related starter files to the boilerplate.
 
+Be sure to cd into the new directory before running further commands.
+
+```
+$ cd movie-player
+```
+
+### route [name]
+The *route* command adds a component to the *app* folder. Use this option to create a new page route. 
+
+```
+$ ngwp route content
+```
+After generating the component, be sure to add it to the *app.routing.ts* file.
+
 ### component [name]
 The *component* command adds a component to the *app/shared/components* folder. Use this option to create UI components that can be shared across routes. 
 
 ```
-$ cd movie-player
 $ ngwp component header
 ```
 After generating the component, be sure to add it to the *app.module.ts* file, or another module.
@@ -75,11 +88,3 @@ The *service* command adds a service to the *app/shared/service folder*. Use thi
 $ ngwp service json
 ```
 After generating the service, be sure to add it to the *app.module.ts* file, or another module.
-
-### route [name]
-The *route* command adds a component to the *app* folder. Use this option to create a new page route. 
-
-```
-$ ngwp route content
-```
-After generating the component, be sure to add it to the *app.routing.ts* file.
