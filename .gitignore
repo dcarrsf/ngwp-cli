@@ -2,7 +2,7 @@
 # compiled output
 /dist
 /tmp
-/test
+/projects
 
 # dependencies
 /node_modules
