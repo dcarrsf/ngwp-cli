@@ -50,46 +50,46 @@ $ npm install
 ```
 
 ### route [name]
-The *route* command adds a component to the *app* folder. Use this option to create a new page route. 
+The *route* command adds a component to the *./src/app/* folder. Use this option to create a new page route. 
 
 ```
 $ ngwp route contact
 ```
-After generating the component, be sure to add it to the *app.routing.ts* file.
+After generating the component, be sure to add it to the *./src/app/app.routing.ts* file.
 
 ### component [name]
-The *component* command adds a component to the *app/shared/components* folder. Use this option to create UI components that can be shared across routes. 
+The *component* command adds a component to the *./src/app/shared/components/* folder. Use this option to create UI components that can be shared across routes. 
 
 ```
 $ ngwp component header
 ```
-After generating the component, be sure to add it to the *app.module.ts* file, or another module.
+After generating the component, be sure to add it to the *./src/app/app.module.ts* file, or another module.
 
 ### directive [name]
-The *directive* command adds a directive to the *app/shared/directives* folder. Use this option to create custom directives to manipulat ethe DOM. 
+The *directive* command adds a directive to the *./src/app/shared/directives/* folder. Use this option to create custom directives to manipulat ethe DOM. 
 
 ```
 $ ngwp directive iterate
 ```
 
 ### pipe [name]
-The *pipe* command adds a pipe to the *app/shared/pipes* folder. Use this option to create custom filters. 
+The *pipe* command adds a pipe to the *./src/app/shared/pipes/* folder. Use this option to create custom filters. 
 
 ```
 $ ngwp pipe uppercase
 ```
 
 ### model [name]
-The *model* command adds a model to the *app/shared/models folder*. Use this option to create a simple model class with static typing and private encapsulated properties. 
+The *model* command adds a model to the *./src/app/shared/models/* folder. Use this option to create a simple model class with static typing and private encapsulated properties. 
 
 ```
 $ ngwp model user
 ```
 
 ### service [name]
-The *service* command adds a service to the *app/shared/service folder*. Use this option to create utilities and reusable services for your components. 
+The *service* command adds a service to the *./src/app/shared/service* folder. Use this option to create utilities and reusable services for your components. 
 
 ```
 $ ngwp service json
 ```
-After generating the service, be sure to add it to the *app.module.ts* file, or another module.
+After generating the service, be sure to add it to the *./src/app/app.module.ts* file, or another module.
