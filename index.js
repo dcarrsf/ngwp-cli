@@ -21,8 +21,7 @@ program
   .version('0.1.0')
 
 program
-  .command('init [name]')
-  .option("-r, --routes [routes]", "Do you need page routing?")
+  .command('init')
   .action(function(name, options){
     printBanner();
     ngwp.init(name, options);
@@ -86,7 +85,8 @@ program.on('--help', function() {
   console.log();
   console.log(chalk.cyan('Commands:'));
   console.log();
-  console.log('new [name] [options]  Install Angular2+ starter files with optional routing.');
+  console.log('init                  Install Angular2+ starter files with optional routing.');
+  console.log('module [name]         Install a new module into a route.');
   console.log('route [name]          Install a new route into ./');
   console.log('component [name]      Install a new component into ./shared/controls');
   console.log('directive [name]      Install a new directive into ./shared/directives');
@@ -101,7 +101,6 @@ program.on('--help', function() {
   console.log();
   console.log('-h, --help            Output usage information.');
   console.log('-V, --version         Output the version number.');
-  console.log('-r, --routes          Add routes to the starter files.');
   // Examples
   // console.log();
   // console.log(chalk.cyan('Examples:'));
