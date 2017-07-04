@@ -2,7 +2,7 @@
 const privateData = new WeakMap();
 
 // Class
-export class <% classname %>Model{
+export class <% classname %>Model {
   // --------------------------
   // PROPERTIES:
   constructor() {
