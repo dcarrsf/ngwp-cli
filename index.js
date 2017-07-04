@@ -73,7 +73,7 @@ program.on('--help', function() {
   // Banner
   printBanner();
   // Usage
-  console.log(chalk.yellow('Usage: ngwp my-app --r true'));
+  console.log(chalk.yellow('Usage: ngwp init'));
   // Commands
   console.log();
   console.log(chalk.cyan('Commands:'));
