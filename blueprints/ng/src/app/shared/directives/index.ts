@@ -1,0 +1,1 @@
+// export * from './<folder>/<name>.directive';
