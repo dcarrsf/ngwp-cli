@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { <% classname %>Component } from './<% name %>.component';
 
 describe('<% classname %>Component', () => {
-  let component: <% classname %>;
+  let component: <% classname %>Component;
   let fixture: ComponentFixture<<% classname %>Component>;
 
   beforeEach(async(() => {
