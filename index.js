@@ -69,13 +69,6 @@ program
     ngwp.route(name, options);
   });
 
-program
-  .command('module [name]')
-  .action(function(name, options){
-    printBanner();
-    ngwp.module(name, options);
-  });
-
 program.on('--help', function() {
   // Banner
   printBanner();
@@ -86,15 +79,12 @@ program.on('--help', function() {
   console.log(chalk.cyan('Commands:'));
   console.log();
   console.log('init                  Install Angular2+ starter files with optional routing.');
-  console.log('module [name]         Install a new module into a route.');
   console.log('route [name]          Install a new route into ./');
   console.log('component [name]      Install a new component into ./shared/controls');
   console.log('directive [name]      Install a new directive into ./shared/directives');
-  console.log('service [name]        Install a new service into ./shared/services');
   console.log('pipe [name]           Install a new pipe into ./shared/pipes');
+  console.log('service [name]        Install a new service into ./shared/services');
   console.log('model [name]          Install a new pipe into ./shared/models');
-  // todo: build project from json config
-  // console.log('init [json]        Install project based on json config.');
   // Options
   console.log();
   console.log(chalk.cyan('Options:'));
@@ -105,8 +95,7 @@ program.on('--help', function() {
   // console.log();
   // console.log(chalk.cyan('Examples:'));
   // console.log();
-  // console.log(' $ ngwp new <name> --routes true');
-  // console.log(' $ ngwp new <name> -r false');
+  // console.log(' $ ngwp init');
   // console.log(' $ ngwp route <name>');
   // console.log(' $ ngwp component <name>');
   // console.log(' $ ngwp directive <name>');
