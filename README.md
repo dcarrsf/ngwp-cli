@@ -7,12 +7,16 @@ The ngwp CLI is designed to make Angular development with Webpack easy and fast.
 ![Screenshot](/img/ngwp-cli.jpg)
 
 ## Installation
-First, clone the repo to your local drive. Then, cd into the ngwp-cli directory and install the CLI globally. This approach will enable you to modify the template files as needed, while using the CLI across projects.
-
+Clone the repo to your local drive and cd into the ngwp-cli directory. 
 ```
 $ git clone https://github.com/dcarrsf/ngwp-cli.git
 $ cd ngwp-cli
+```
+Install the CLI globally and locally. This approach will enable you to modify the template files as needed, while using the CLI across projects.
+
+```
 $ npm install -g
+$ npm install
 ```
 Check the version to confirm the installation.
 
