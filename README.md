@@ -12,11 +12,10 @@ Clone the repo to your local drive and cd into the ngwp-cli directory.
 $ git clone https://github.com/dcarrsf/ngwp-cli.git
 $ cd ngwp-cli
 ```
-Install the CLI globally and locally. This approach will enable you to modify the template files as needed, while using the CLI across projects.
+Install the CLI globally. This approach creates a global alias to the ngwp-cli folder, enabling you to modify the template files while using the CLI across projects.
 
 ```
 $ npm install -g
-$ npm install
 ```
 Check the version to confirm the installation.
 
